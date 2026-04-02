@@ -16,7 +16,9 @@ const TOPICS = ['Order Support', 'Product Inquiry', 'Returns & Refunds', 'Techni
 export default function ContactPage() {
   const { variation } = useTheme();
   const [form, setForm] = useState({ name: '', email: '', topic: '', message: '' });
+  const [errors, setErrors] = useState({});
   const [sent, setSent] = useState(false);
+
   const setF = (k, v) => setForm(p => ({ ...p, [k]: v }));
 
   const accentCls = variation === 2 ? 'text-neon' : 'text-primary';
@@ -25,9 +27,46 @@ export default function ContactPage() {
     : 'bg-primary text-primary-foreground';
   const inputCls  = 'w-full bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground outline-none focus:border-primary transition-colors';
 
+  // ✅ VALIDATION FUNCTION
+  const validate = () => {
+    const newErrors = {};
+
+    if (!form.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (form.name.length < 3) {
+      newErrors.name = "Name must be at least 3 characters";
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+      newErrors.email = "Enter a valid email";
+    }
+
+    if (!form.topic) {
+      newErrors.topic = "Please select a topic";
+    }
+
+    if (!form.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (form.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.name && form.email && form.message) setSent(true);
+    const validationErrors = validate();
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setErrors({});
+    setSent(true);
   };
 
   return (
@@ -95,11 +134,13 @@ export default function ContactPage() {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-medium text-muted-foreground mb-1.5">Full Name *</label>
-                        <input value={form.name} onChange={e => setF('name', e.target.value)} required placeholder="John Doe" className={inputCls} />
+                        <input value={form.name} onChange={e => setF('name', e.target.value)} placeholder="John Doe" className={inputCls} />
+                        {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                       </div>
                       <div>
                         <label className="block text-xs font-medium text-muted-foreground mb-1.5">Email Address *</label>
-                        <input type="email" value={form.email} onChange={e => setF('email', e.target.value)} required placeholder="john@example.com" className={inputCls} />
+                        <input type="email" value={form.email} onChange={e => setF('email', e.target.value)} placeholder="john@example.com" className={inputCls} />
+                        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                       </div>
                     </div>
 
@@ -109,12 +150,14 @@ export default function ContactPage() {
                         <option value="">Select a topic...</option>
                         {TOPICS.map(t => <option key={t} value={t}>{t}</option>)}
                       </select>
+                      {errors.topic && <p className="text-red-500 text-xs mt-1">{errors.topic}</p>}
                     </div>
 
                     <div>
                       <label className="block text-xs font-medium text-muted-foreground mb-1.5">Message *</label>
-                      <textarea value={form.message} onChange={e => setF('message', e.target.value)} required rows={5}
+                      <textarea value={form.message} onChange={e => setF('message', e.target.value)} rows={5}
                         placeholder="Tell us how we can help..." className={inputCls + ' resize-none'} />
+                      {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
                     </div>
 
                     <button type="submit" className={'w-full py-3.5 rounded-xl font-medium flex items-center justify-center gap-2 ' + accentBg}>
@@ -127,17 +170,6 @@ export default function ContactPage() {
                     </p>
                   </form>
                 )}
-              </div>
-            </div>
-
-            {/* FAQ teaser */}
-            <div className={'mt-16 rounded-2xl p-8 text-center ' + (variation === 2 ? 'bg-card border border-border' : 'bg-secondary')}>
-              <h3 className={'font-heading text-xl font-bold text-foreground mb-2 ' + (variation === 3 ? 'italic' : '')}>Looking for quick answers?</h3>
-              <p className="text-muted-foreground text-sm mb-4">Check our FAQ for instant help on orders, shipping, returns, and more.</p>
-              <div className="flex flex-wrap justify-center gap-3">
-                {['Order Tracking', 'Return Policy', 'Shipping Info', 'Payment Methods'].map(q => (
-                  <span key={q} className="text-xs px-4 py-2 rounded-full border border-border bg-background text-muted-foreground hover:text-foreground hover:border-foreground transition-colors cursor-pointer">{q}</span>
-                ))}
               </div>
             </div>
 
