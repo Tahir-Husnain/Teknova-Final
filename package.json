@@ -2,12 +2,13 @@
   "name": "teknova",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "postbuild": "next-sitemap",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.0",

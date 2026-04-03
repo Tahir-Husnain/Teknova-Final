@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:3000</loc><lastmod>2026-04-03T07:50:36.125Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>http://localhost:3000/about</loc><lastmod>2026-04-03T07:50:36.125Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/contact</loc><lastmod>2026-04-03T07:50:36.125Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>http://localhost:3000/privacy</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/products</loc><lastmod>2026-04-03T07:50:36.125Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>http://localhost:3000/search</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/templates</loc><lastmod>2026-04-03T07:50:36.125Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>http://localhost:3000/terms</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/apple-iphone-15-pro-max</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/samsung-galaxy-s24-ultra</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/google-pixel-8-pro</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/apple-macbook-pro-16</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/dell-xps-15-oled</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/lenovo-thinkpad-x1-carbon</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/sony-wh-1000xm5</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/apple-airpods-pro-2</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/bose-quietcomfort-45</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/apple-watch-series-10</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/samsung-galaxy-watch-6</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/sony-alpha-a7r-v</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/fujifilm-x100vi</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/ps5-dualsense-controller</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/razer-blackwidow-v4-pro</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/logitech-g502-x-plus</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/asus-rog-swift-pg27aqn</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/samsung-49-odyssey-g9</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/apple-ipad-pro-13-m4</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/samsung-galaxy-tab-s9-ultra</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/dyson-airwrap-complete</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/garmin-forerunner-965</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/xbox-series-x</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/gopro-hero-12-black</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/product/nikon-z8</loc><lastmod>2026-04-03T07:50:36.124Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+</urlset>
